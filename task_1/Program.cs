@@ -4,3 +4,19 @@
 
 2, 4 -> 16 */
 
+int Sqrt(int a, int b)
+{
+  int result = 1;
+  for (int i = 1; i <= b; i++)
+  {
+    result *= a;
+  }
+
+  return result;
+}
+Console.Write("Enter number A: ");
+int a = int.Parse(Console.ReadLine());
+Console.Write("Enter number B: ");
+int b = int.Parse(Console.ReadLine());
+
+Console.WriteLine($"number A to the pover B = {Sqrt(a, b)}");
